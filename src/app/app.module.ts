@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CarouselangComponent } from './carouselang/carouselang.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +12,7 @@ import { CarouselangComponent } from './carouselang/carouselang.component';
     CarouselangComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
